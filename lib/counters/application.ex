@@ -9,7 +9,8 @@ defmodule Counters.Application do
     # List all child processes to be supervised
     children = [
       # Start the Ecto repository
-      Counters.Repo,
+      # Counters.Repo,
+      Counters.CountersRepository,
       # Start the endpoint when the application starts
       CountersWeb.Endpoint
       # Starts a worker by calling: Counters.Worker.start_link(arg)
